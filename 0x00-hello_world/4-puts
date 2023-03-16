@@ -1,6 +1,11 @@
 #include <stdio.h>
+/**
+ * main - This is a program that prints a line with the put function
+ * Return: 0 (My program ran successfully!)
+ */
+
 int main(void){
-	    puts("alx-low_level_programming\n");
+	    puts("\"alx-low_level_programming\n");
 	  return 0;
 	   
 	     }
