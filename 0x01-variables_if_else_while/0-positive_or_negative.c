@@ -3,9 +3,8 @@
 #include <stdio.h>
 /* more headers goes there */
 /**
- * main - A program that will assign a random number to n
- * each time it is executed
- * Return 0: (success)
+ *main - A program that will assign a random number to n
+ *Return 0:(successfuly ran the program) 
  */
 /* betty style doc for function main goes there */
 int main(void)
