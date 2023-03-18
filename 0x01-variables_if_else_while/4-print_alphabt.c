@@ -11,7 +11,7 @@ int main(void)
 
 	while (bng <= 'z')
 	{
-		if (bng == 'e' || bng == 'q')
+		if (bng == 'e' && bng == 'q')
 		{putchar(bng);
 		}
 	bng++;
