@@ -14,6 +14,7 @@ int main(void)
 		if (bng == 'e' || bng == 'q')
 		{putchar(bng);
 		}
+	bng++;
 	}
 return (0);
 }
