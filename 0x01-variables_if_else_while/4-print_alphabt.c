@@ -10,9 +10,9 @@ int main(void)
 	bng = 'a';
 
 	while (bng <= 'z')
-	{putchar(bng);
+	{
 		if (bng == 'e' || bng == 'q')
-		{continue;
+		{putchar(bng);
 		}
 	}
 return (0);
