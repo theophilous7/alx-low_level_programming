@@ -18,7 +18,6 @@ while (c[0] <= 'z')
 		c[0]++;
 	}
 }
-putchar('\n');
 if (c[1] <= 'Z')
 {
 while (c[1] <= 'Z')
@@ -26,5 +25,6 @@ while (c[1] <= 'Z')
 		c[1]++;
 	}
 }
+putchar('\n');
 return (0);
 }
