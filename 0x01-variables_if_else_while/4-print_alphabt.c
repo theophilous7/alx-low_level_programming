@@ -16,5 +16,6 @@ int main(void)
 		}
 	bng++;
 	}
+	putchar('\n');
 return (0);
 }
