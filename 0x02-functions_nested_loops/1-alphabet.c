@@ -1,17 +1,17 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
  * Description: A program that prints lowercase alphabets
- * @parameter: void print_alphabet(void);
+ * @void: void returns nothing
+ * print_alphabet(): print_alphabet() returns nothing too
  *Return: 0 (success)
  */
-void print_alphabet(void);
 void print_alphabet(void)
 {
 for (char ltr = 97; ltr < 123; ltr++)
-	{putchar(ltr);
+	{_putchar(ltr);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
 int main(void)
 {print_alphabet();
