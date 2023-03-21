@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * _abs - prints absolute value of a number
- * @int: this is an operand
+ * @n: this is an operand
  * Return: int
  */
-int _abs(int)
+int _abs(int n)
 {int n;
 
 if (n < 0)
