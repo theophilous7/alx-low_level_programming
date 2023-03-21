@@ -3,10 +3,10 @@
 /**
  * main - Entry point
  * Description: A program that holds function prototypes
- * @char: only operand
+ * @int: only operand
  * Return: 0 (sucess)
  */
-int _putchar(int char);
+int _putchar(int);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
