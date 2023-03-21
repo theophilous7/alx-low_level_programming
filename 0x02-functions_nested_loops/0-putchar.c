@@ -5,7 +5,8 @@
  * Return: 0 (success)
  */
 int main(void)
-{putchar('_');
+{int p, u, t, c, h, a, r;
+putchar('_');
 putchar('p');
 putchar('u');
 putchar('t');
