@@ -5,13 +5,13 @@
  */
 void print_most_numbers(void)
 {
-char nums[] = "01356789';
+char nums[] = "01356789";
 
 int i;
 
-for (i = 0; c <= 7; c++)
+for (i = 0; i <= 7; i++)
 {
-_putchar(num[i]);
+_putchar(nums[i]);
 }
 _putchar('\n');
 }
