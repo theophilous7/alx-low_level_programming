@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * main - Entry point
+ * positive_or_negative - the function
  * Return: 0 (success)
  */
 int main(void)
