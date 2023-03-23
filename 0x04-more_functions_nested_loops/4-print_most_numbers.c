@@ -1,18 +1,17 @@
 #include "main.h"
-#include <unistd.h>
 /**
  * print_most_numbers - Entry poin
  * Return: void
  */
 void print_most_numbers(void)
-{char c;
+{
+char nums[] = "01356789';
 
-for (c = 0; c <= '9'; c++)
+int i;
+
+for (i = 0; c <= 7; c++)
 {
-if (!(c == '2' || c == '4'))
-{
-_putchar(c);
+_putchar(num[i]);
 }
 _putchar('\n');
-}
 }
