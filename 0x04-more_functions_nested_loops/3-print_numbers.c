@@ -5,7 +5,7 @@
  */
 void print_numbers(void)
 {
-int num[] = "0123456789";
+char num[] = "0123456789";
 
 int i;
 
