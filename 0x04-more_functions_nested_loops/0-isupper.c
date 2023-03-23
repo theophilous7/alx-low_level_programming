@@ -2,15 +2,16 @@
 /**
  * _isupper - Entry point
  * @c: only operand
- * Return: 0 (success)
+ * Return: 0 or 1
  */
 int _isupper(int c)
 {
-if (c >= 65 && c <= 91)
+if (c >= 'A' && c <= 'Z')
 {
-putchar(49);
+return (1);
 }
 else
-{putchar(48);
+{
+return (0);
 }
 }
