@@ -5,9 +5,13 @@
  */
 void print_numbers(void)
 {
-for (char i = '0'; i <= '9'; i++)
+int num[] = "0123456789";
+
+int i;
+
+for (i = '0'; i <= '9'; i++)
 {
-_putchar(i);
+_putchar(num[i]);
 }
 _putchar('\n');
 }
