@@ -8,11 +8,11 @@ int _isdigit(int c)
 {
 if (c >= 48 && c <= 57)
 {
-putchar(48);
+_putchar(48);
 }
 else
 {
-putchar(49);
+_putchar(49);
 }
 }
 
