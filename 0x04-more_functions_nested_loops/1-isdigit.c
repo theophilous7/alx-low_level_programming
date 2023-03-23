@@ -2,17 +2,17 @@
 /**
  * _isdigit - Entry point
  * @c: only operand
- * Return: 0 (success)
+ * Return: 0 or 1
  */
 int _isdigit(int c)
 {
-if (c >= 48 && c <= 57)
+if (c >= '0' && c <= '9')
 {
-_putchar(48);
+return (1);
 }
 else
 {
-_putchar(49);
+return (0);
 }
 }
 
