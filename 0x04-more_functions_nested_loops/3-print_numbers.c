@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * print_numbers - Entry point
- * Return: void
+ * print_numbers - print numbers
+ * Return: Always 0.
  */
 void print_numbers(void)
 {
-char num[] = "0123456789";
-
 int i;
 
-for (i = 0; i < 10; i++)
+i = 0;
+while (i < 10)
 {
-_putchar(num[i]);
+_putchar (i + '0');
+i++;
 }
+_putchar ('\n');
 }
-
