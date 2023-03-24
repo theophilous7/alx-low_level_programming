@@ -1,24 +1,40 @@
 #include "main.h"
 /**
- *  print_triangle - entry point
- *  @size: only operand
- *  Return: 0 (succes)
+ * print_triangle - prints triangle
+ * @size: print size
+ * Return: Always 0.
  */
-void print_triangle(int size)
-{
-int i, d, j;
 
-size  = 2;
-for (i = 1; i <= size; i++)
+void print_triangle(int size)
+
 {
-for (j = i; j < size; j++)
+int i;
+
+int z;
+
+int d;
+
+int p;
+
+if (size > 0)
 {
-_putchar('.');
+d = size - 1;
+for (i = 0; i < size ; i++)
+{
+for (z = d; z > 0 ; z--)
+{
+_putchar (' ');
 }
-for (d = 0; d < i; d++)
+for (p = 0; p <= i; p++)
 {
-_putchar('$');
+_putchar (35);
 }
-_putchar('\n');
+d--;
+_putchar ('\n');
+}
+}
+else
+{
+_putchar ('\n');
 }
 }
