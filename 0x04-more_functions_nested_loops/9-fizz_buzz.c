@@ -1,49 +1,40 @@
 #include <stdio.h>
 /**
  * main - entry point
- * Return: 0 (success)
+ *
+ * Return: void
  */
+
 int main(void)
 {
-int a;
 
-for (a = 1; a <= 100; a++)
-{
-if ((a % 5 == 0 && a % 3 == 0) && a != 0)
-{
-char bth[] = "FizzBuzz";
-int t;
+int p = 100;
+int i;
 
-for (t = 0; t <= 8; t++)
+i = 1;
+while (i <= p)
 {
-putchar(bth[t]);
-}
-}
-else if (a % 3 == 0 && a != 0)
+if (i % 3 == 0 && i % 5 == 0)
 {
-char fiz[] = "Fizz";
-int f;
-
-for (f = 0; f <= 4; f++)
-{
-putchar(fiz[f]);
+printf("FizzBuzz ");
 }
-}
-else if (a % 5 == 0 && a != 0)
+else if (i % 3 == 0)
 {
-char buz[] = "Buzz";
-int b;
-
-for (b = 0; b <= 4; b++)
-{
-putchar(buz[b]);
+printf("Fizz ");
 }
+else if (i % 5 == 0)
+{
+if (i < p)
+printf("Buzz ");
+else
+printf("Buzz");
 }
 else
 {
-printf("%d", a);
-putchar(' ');
+printf("%i ", i);
 }
+i++;
 }
+printf("\n");
 return (0);
 }
