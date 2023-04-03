@@ -13,10 +13,6 @@ unsigned int i;
 for (i = 0; i < n; i++)
 {
 s[i] = b;
-for (i= 0; i < n; i++)
-{
-_putchar(s[i]);
 }
-}
-return (0);
+return (s);
 }
