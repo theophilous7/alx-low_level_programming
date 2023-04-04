@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strstr - a function that returns a substring
  * @haystack: first operand
@@ -6,7 +7,7 @@
  * Return: 0 (success)
  */
 char *_strstr(char *haystack, char *needle)
-{       
+{
 int i, k;
 
 for (i = 0; haystack[i] != '\0'; i++)
@@ -14,12 +15,12 @@ for (i = 0; haystack[i] != '\0'; i++)
 while (needle[k] != '\0' && haystack[i] == needle[k])
 {
 i++;
-j++;
+k++;
 }
 if (needle[k] != '\0')
 {
-return (char *)&needle[i];
+return ((char *)&needle[i]);
 }
 }
-return NULL;
+return (NULL);
 }
