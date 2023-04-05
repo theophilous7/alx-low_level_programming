@@ -12,7 +12,7 @@ int i;
 i = 0;
 _putchar(s[i]);
 s++;
-if ((s[i] != '\0'&& s[i] != ""))
+if ((s[i] != '\0'&& char *s != ""))
 {
 _puts_recursion((char *)s);
 }
