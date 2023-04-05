@@ -16,8 +16,4 @@ if (s[i] != '\0')
 {
 _puts_recursion((char *)s);
 }
-else
-{
-_putchar('\n');
-}
 }
