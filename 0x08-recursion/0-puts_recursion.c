@@ -12,11 +12,8 @@ int i;
 i = 0;
 _putchar(s[i]);
 s++;
-if ((int)s[i] == NULL)
-{
-return;
 }
-if (s[i] != '\0')
+if (s[i] != '\0'&& s[i] != "")
 {
 _puts_recursion((char *)s);
 }
