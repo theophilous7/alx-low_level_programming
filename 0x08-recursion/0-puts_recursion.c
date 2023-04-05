@@ -12,7 +12,7 @@ int i;
 i = 0;
 _putchar(s[i]);
 s++;
-if (s[i] == NULL)
+if ((int)s[i] == NULL)
 {
 return;
 }
