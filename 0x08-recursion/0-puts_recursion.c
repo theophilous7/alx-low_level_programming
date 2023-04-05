@@ -11,6 +11,6 @@ _putchar(*s);
 s++;
 if (*s != '\0')
 {
-_puts_recursion(char *s);
+_puts_recursion((char *)s);
 }
 }
