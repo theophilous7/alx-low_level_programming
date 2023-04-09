@@ -8,21 +8,20 @@
  */
 int main(int argc, char *argv[])
 {
+int first, second, result;
+
 if (argc == 1)
 {
 printf("0\n");
 }
-if (argc < '48' && argc > '57')
+if (argc < 0 && argc > 9)
 {
 printf("Error\n");
 return (1);
 }
-int first, second, result;
-
 first = atoi(argv[1]);
 second = atoi(argv[2]);
-result = first +second;
+result = first + second;
 printf("%d\n", result);
 return (0);
 }
-
