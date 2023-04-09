@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-int first, second, result;
+int first, second;
 
 if (argc < 2)
 {
@@ -17,7 +17,5 @@ return (1);
 }
 first = atoi(argv[1]);
 second = atoi(argv[2]);
-result = first *second;
-printf("%d\n", result);
-return (0);
+return (first *second);
 }
