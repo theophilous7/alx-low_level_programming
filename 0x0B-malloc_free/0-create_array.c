@@ -7,7 +7,7 @@
  *@c: second operand
  *Return: pointer
  */
-int char *create_array((int*)unsigned int size, char c)
+int char *create_array(unsigned int size, char c)
 {
 int *arr;
 
@@ -17,7 +17,7 @@ if (size == 0)
 {
 return (NULL);
 }
-arr =(int*) malloc(size + 1  * sizeof(char));
+*arr =(int*) malloc(size + 1  * sizeof(char));
 while (i < size + 1)
 {
 arr[i] = c;
