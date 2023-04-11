@@ -16,5 +16,5 @@ return (NULL);
 }
 holder = malloc(sizeof(str));
 holder = str;
-return (&holder);
+return (holder);
 }
