@@ -7,7 +7,7 @@
  *@c: second operand
  *Return: pointer
  */
-int char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 int *arr;
 
