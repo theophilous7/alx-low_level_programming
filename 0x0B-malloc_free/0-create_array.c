@@ -17,7 +17,7 @@ if (size == 0)
 {
 return (NULL);
 }
-*arr =  malloc(size + 1  * sizeof(char));
+*arr = char(*) malloc(size + 1  * sizeof(char));
 while (i < size + 1)
 {
 arr[i] = c;
