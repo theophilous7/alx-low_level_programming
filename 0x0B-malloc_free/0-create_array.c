@@ -11,18 +11,18 @@ int char *create_array(unsigned int size, char c)
 {
 int *arr;
 
-int i;
+unsigned int i;
 
 if (size == 0)
 {
 return (NULL);
 }
-arr = malloc(size + 1  * sizeof(char));
+arr =(int*) malloc(size + 1  * sizeof(char));
 while (i < size + 1)
 {
 arr[i] = c;
 i++;
 }
-s[i] = '\0';
+arr[i] = '\0';
 return (arr);
 }
