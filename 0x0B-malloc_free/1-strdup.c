@@ -27,4 +27,5 @@ holder[i] = str[i];
 }
 holder[i] = '\0';
 return (holder);
+free(holder);
 }
