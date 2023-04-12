@@ -21,10 +21,15 @@ return (NULL);
 }
 len = strlen(str);
 holder = (char *) malloc((len + 1) * sizeof(char));
+if (holder = NULL)
+{
+return (NULL);
+}
 for (i = 0; str[i] != '\0'; i++)
 {
 holder[i] = str[i];
 }
 holder[i] = '\0';
 return (holder);
+free(holder);
 }
