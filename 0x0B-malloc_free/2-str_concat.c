@@ -28,7 +28,7 @@ for (i = 0; s1[i] != '\0'; i++)
 {
 holder[i] = s1[i];
 }
-for (i = 0; s2[i] != '\0'; i++)
+for (j = 0; s2[i] != '\0'; i++)
 {
 holder[i + j] = s2[j];
 }
