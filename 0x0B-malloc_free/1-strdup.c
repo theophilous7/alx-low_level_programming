@@ -8,7 +8,7 @@
  */
 char *_strdup(char *str)
 {
-char *holder = NULL;
+char *holder;
 
 int i;
 
@@ -26,7 +26,7 @@ if (holder == NULL)
 {
 return (NULL);
 }
-holder = (char *)malloc((len + 1) *sizeof(char));
+holder = (char *) malloc((len + 1) * sizeof(char));
 for (i = 0; str[i] != '\0'; i++)
 {
 holder[i] = str[i];
