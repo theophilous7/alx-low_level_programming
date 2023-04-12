@@ -22,10 +22,6 @@ while (str[len] != '\0')
 {
 len++;
 }
-if (holder == NULL)
-{
-return (NULL);
-}
 holder = (char *) malloc((len + 1) * sizeof(char));
 for (i = 0; str[i] != '\0'; i++)
 {
