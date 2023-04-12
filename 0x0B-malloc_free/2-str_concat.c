@@ -10,11 +10,11 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-int len_one, len_two;
+int len_one, len_two, total_len;
 
 char *holder;
 
-int i, j;
+int i;
 
 if (s1 == NULL || s2 == NULL)
 {
@@ -22,15 +22,17 @@ return (NULL);
 }
 len_one = strlen(s1);
 len_two = strlen(s2);
-holder = (char *) malloc((len_one + len_two  + 1) * sizeof(char));
+total_len = len_one + len_two;
+holder = (char *) malloc((total_len  + 1) * sizeof(char));
 for (i = 0; s1[i] != '\0'; i++)
 {
 holder[i] = s1[i];
 }
-for (j = 0; s2[j] != '\0'; j++)
+holder[i] = " ";
+for (i = 0; s2[i] != '\0'; i++)
 {
-holder[j] = s2[j];
+holder[i] = s2[i];
 }
-holder[j] = '\0';
+holder[i] = '\0';
 return (holder);
 }
