@@ -18,9 +18,7 @@ if (str == NULL)
 {
 return (NULL);
 }
-while (str[len] != '\0')
-{
-len++;
+len = strlen(str);
 }
 holder = (char *) malloc((len + 1) * sizeof(char));
 for (i = 0; str[i] != '\0'; i++)
