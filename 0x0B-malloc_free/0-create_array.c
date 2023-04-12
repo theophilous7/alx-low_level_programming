@@ -17,10 +17,11 @@ if (size == 0)
 {
 return (NULL);
 }
-arr = (char *)malloc((size + 1)  * sizeof(char));
+arr = (char *)malloc((size)  * sizeof(char));
 for (i = 0; i < size; i++)
 {
 arr[i] = c;
 }
 return (arr);
+free(arr);
 }
