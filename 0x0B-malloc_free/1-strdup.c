@@ -26,6 +26,5 @@ for (i = 0; str[i] != '\0'; i++)
 holder[i] = str[i];
 }
 holder[i] = '\0';
-free(holder);
 return (holder);
 }
