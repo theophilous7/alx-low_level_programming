@@ -36,6 +36,6 @@ for (j = 0; j < len_two; j++)
 {
 holder[i + len_one] = s2[j];
 }
-holder[i] = '\0';
+holder[i + j + 1] = '\0';
 return (holder);
 }
