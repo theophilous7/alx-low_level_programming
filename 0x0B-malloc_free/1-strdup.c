@@ -20,7 +20,6 @@ if (str == NULL)
 return (NULL);
 }
 len = strlen(str);
-}
 holder = (char *) malloc((len + 1) * sizeof(char));
 for (i = 0; str[i] != '\0'; i++)
 {
