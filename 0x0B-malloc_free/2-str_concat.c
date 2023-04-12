@@ -32,7 +32,7 @@ for (i = 0; i < len_one; i++)
 {
 holder[i] = s1[i];
 }
-for (j = 0; j < len_two; i++)
+for (j = 0; j < len_two; j++)
 {
 holder[i + j] = s2[j];
 }
