@@ -21,7 +21,7 @@ return (NULL);
 }
 len = strlen(str);
 holder = (char *) malloc((len + 1) * sizeof(char));
-if (holder = NULL)
+if (holder == NULL)
 {
 return (NULL);
 }
