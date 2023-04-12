@@ -14,7 +14,7 @@ int len_one, len_two, total_len;
 
 char *holder;
 
-int i;
+int i,j;
 
 if (s1 == NULL || s2 == NULL)
 {
@@ -30,7 +30,7 @@ holder[i] = s1[i];
 }
 for (i = 0; s2[i] != '\0'; i++)
 {
-holder[i] = s2[i];
+holder[i + j] = s2[j];
 }
 holder[i] = '\0';
 return (holder);
