@@ -22,7 +22,6 @@ for (i = 0; i < size; i++)
 {
 arr[i] = c;
 }
-_putchar('\n');
 return (arr);
 free(arr);
 }
