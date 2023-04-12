@@ -26,11 +26,12 @@ if (holder == NULL)
 {
 return (NULL);
 }
-holder = (char *) malloc((len *sizeof(char)) + 1);
+holder = (char *)malloc((len *sizeof(char)) + 1);
 for (i = 0; str[i] != '\0'; i++)
 {
 holder[i] = str[i];
 }
 holder[i] = '\0';
 return (holder);
+free(holder);
 }
