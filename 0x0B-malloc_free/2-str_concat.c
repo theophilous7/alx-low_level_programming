@@ -28,7 +28,7 @@ for (i = 0; s1[i] != '\0'; i++)
 {
 holder[i] = s1[i];
 }
-_putchar(" ");
+_putchar(' ');
 for (i = 0; s2[i] != '\0'; i++)
 {
 holder[i] = s2[i];
