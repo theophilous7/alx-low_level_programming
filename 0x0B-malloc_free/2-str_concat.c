@@ -28,11 +28,11 @@ if (holder == NULL)
 {
 return (NULL);
 }
-for (i = 0; s1[i] != '\0'; i++)
+for (i = 0; i < len_one; i++)
 {
 holder[i] = s1[i];
 }
-for (j = 0; s1[i + j] != '\0'; i++)
+for (j = 0; j < len_two; i++)
 {
 holder[i + j] = s2[j];
 }
