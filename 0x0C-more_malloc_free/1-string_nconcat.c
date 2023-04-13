@@ -34,6 +34,6 @@ s2 = "";
 }
 memcpy(holder, s1, len_one);
 memcpy(holder + len_one, s2, n);
-holder[holder + len_one + n] = '\0';
+holder[n] = '\0';
 return (holder);
 }
