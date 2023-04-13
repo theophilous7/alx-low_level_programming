@@ -17,12 +17,12 @@ if (min > max)
 {
 return (NULL);
 }
-holder = malloc(max * sizeof(int));
+holder = (int *) malloc(max * sizeof(int));
 if (holder == NULL)
 {
 return (NULL);
 }
-for (i = min; i <= max; i++)
+for (i = 0; i <= max; i++)
 {
 holder[i] = min + i;
 }
