@@ -13,9 +13,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *holder;
 
-int len_one, len_two, total_len;
+unsigned int len_one, len_two, total_len;
 
-int i, j;
+unsigned int i, j;
 
 len_one = strlen(s1);
 len_two = strlen(s2);
@@ -34,7 +34,7 @@ for (i = 0; i < len_one; i++)
 {
 holder[i] = s1[i];
 }
-if (n >= s2)
+if (n >= len_two)
 {
 for (j = 0; j < len_two; j++)
 {
@@ -45,8 +45,9 @@ else
 {
 for (j = 0; j < n; j++)
 {
-holder[i +j] = s2[j];
+holder[i + j] = s2[j];
 }
 }
 holder[i] = '\0';
+return (holder);
 }
