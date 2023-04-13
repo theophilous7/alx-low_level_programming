@@ -15,11 +15,13 @@ char *holder;
 
 unsigned int len_one, len_two, total_len;
 
-unsigned int i, j;
-
 len_one = strlen(s1);
 len_two = strlen(s2);
 total_len = len_one + len_two;
+if (n >= len_two)
+{
+n = len_two;
+}
 holder = (char *) malloc((total_len + 1) * sizeof(char));
 if (holder == NULL)
 {
@@ -30,24 +32,8 @@ if (s1 == NULL || s2 == NULL)
 s1 = "";
 s2 = "";
 }
-for (i = 0; i < len_one; i++)
-{
-holder[i] = s1[i];
-}
-if (n >= len_two)
-{
-for (j = 0; j < len_two; j++)
-{
-holder[i + j] = s2[j];
-}
-}
-else
-{
-for (j = 0; j < n; j++)
-{
-holder[i + j] = s2[j];
-}
-}
-holder[i] = '\0';
+memcpy(holder, s1, len_one);
+memcpy(holder + len_one, s2, n);
+holder[len_one + n] = '\0';
 return (holder);
 }
