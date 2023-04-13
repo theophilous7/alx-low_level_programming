@@ -17,7 +17,7 @@ if (min > max)
 {
 return (NULL);
 }
-holder = (int *) malloc(max * sizeof(int));
+holder = (int *) malloc((max - min + 1) * sizeof(int));
 if (holder == NULL)
 {
 return (NULL);
