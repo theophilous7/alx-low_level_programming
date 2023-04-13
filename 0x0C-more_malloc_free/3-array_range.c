@@ -22,7 +22,7 @@ if (holder == NULL)
 {
 return (NULL);
 }
-for (i = 0; i <= max; i++)
+for (i = 0; i <  max - min + 1; i++)
 {
 holder[i] = min + i;
 }
