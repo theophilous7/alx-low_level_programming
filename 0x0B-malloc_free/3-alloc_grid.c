@@ -16,7 +16,7 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-int width_size = malloc(width * sizeof(int));
+int **width_size = malloc(width * sizeof(int));
 int height_size = malloc(height * sizeof(int));
 if (width_size == NULL || height_size == NULL)
 {
@@ -26,9 +26,9 @@ for (i = 0; i < height_size; i++)
 {
 for (j = 0; j < width_size; j++)
 {
-width_size[j] = 0;
+width_size[i][j] = 0;
 }
-_putchar('\n');
+return width_size;
 }
 }
 
