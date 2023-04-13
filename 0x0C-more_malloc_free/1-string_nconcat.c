@@ -17,11 +17,11 @@ unsigned int len_one, len_two, total_len;
 
 len_one = strlen(s1);
 len_two = strlen(s2);
-total_len = len_one + len_two;
 if (n >= len_two)
 {
 n = len_two;
 }
+total_len = len_one + len_two;
 holder = (char *) malloc((total_len + 1) * sizeof(char));
 if (holder == NULL)
 {
@@ -34,6 +34,6 @@ s2 = "";
 }
 memcpy(holder, s1, len_one);
 memcpy(holder + len_one, s2, n);
-holder[n] = '\0';
+holder[len_one + n] = '\0';
 return (holder);
 }
