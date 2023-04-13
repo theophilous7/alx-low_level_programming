@@ -26,5 +26,5 @@ for (i = 0; i <= max; i++)
 {
 holder[i] = min + i;
 }
-return (NULL);
+return (holder);
 }
