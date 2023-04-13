@@ -11,12 +11,10 @@ void *malloc_checked(unsigned int b)
 {
 void *holder;
 
-holder = malloc(b * sizeof(int));
+holder = malloc(b);
 if (holder == NULL)
 {
 exit(98);
-free(holder);
 }
 return (holder);
-free(holder);
 }
