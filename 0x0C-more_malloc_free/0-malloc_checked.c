@@ -15,6 +15,8 @@ holder = malloc(b * sizeof(int));
 if (holder == NULL)
 {
 exit(98);
+free(holder);
 }
 return (holder);
+free(holder);
 }
