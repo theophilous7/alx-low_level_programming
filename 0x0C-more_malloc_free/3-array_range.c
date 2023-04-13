@@ -24,7 +24,7 @@ return (NULL);
 }
 for (i = min; i <= max; i++)
 {
-memcpy(holder, i, max);
+holder[i] = min + i;
 }
 return (NULL);
 }
