@@ -9,6 +9,9 @@
  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-struct dog cheetah;
+struct dog cheetah = d;
+cheetah.name = name;
+cheetah.age = age;
+cheetah.owner = owner;
 }
 
