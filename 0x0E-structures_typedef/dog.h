@@ -7,11 +7,10 @@
  * @age: second property
  * @owner: third property
  */
-struct dog
+typedef struct dog
 {
 char *name;
 float age;
 char *owner;
-};
-typedef struct dog dog_t
+}dog_t;
 #endif
