@@ -9,10 +9,11 @@
  */
 void print_dog(struct dog *d)
 {
+d = malloc(sizeof(struct dog));
 if (d == NULL)
 {
-d = malloc(sizeof(struct dog));
-printf("nothing\n");
+free(d);
+return;
 }
 if (d->name == NULL)
 {
