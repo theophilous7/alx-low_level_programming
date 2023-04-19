@@ -20,13 +20,13 @@ return (-1);
 }
 for (i = 0; i < size; i++)
 {
-if (cmp(array[i]) == array[i])
+if (cmp(array[i]) == 0 && cmp(array[i]) == array[i])
 {
 return (i);
 }
 else
 {
-return (-1);
+continue;
 }
 }
 return (0);
