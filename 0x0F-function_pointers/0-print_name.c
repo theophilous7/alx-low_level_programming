@@ -11,3 +11,4 @@ if (f && name)
 {
 f(name);
 }
+}
