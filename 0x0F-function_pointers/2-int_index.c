@@ -12,7 +12,7 @@ int i;
 
 if (cmp == NULL)
 {
-return;
+return(-1);
 }
 if (size <= 0)
 {
