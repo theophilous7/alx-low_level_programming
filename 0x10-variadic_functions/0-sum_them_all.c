@@ -3,6 +3,7 @@
 /**
  * sum_them_all - entry point
  * @n: only operand
+ * Return: integer
  */
 int sum_them_all(const unsigned int n, ...)
 {
@@ -19,6 +20,7 @@ for (i = 0; i < n; i++)
 total = va_arg(args, int);
 sum += total;
 }
+va_end(args);
 return (sum);
 }
 
