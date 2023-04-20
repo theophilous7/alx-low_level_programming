@@ -18,7 +18,14 @@ va_start(args, n);
 for (i = 1; i <= n; i++)
 {
 string  = va_arg(args, char*);
+if (string)
+{
 printf("%s", string);
+}
+else
+{
+printf("(nil)");
+}
 if (i != n && separator != NULL)
 {
 printf("%s", separator);
