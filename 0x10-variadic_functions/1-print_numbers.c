@@ -4,7 +4,7 @@
 #include "variadic_functions.h"
 /**
  * print_numbers - entry point
- * @seperator: first operand
+ * @separator: first operand
  * @n: second operand
  * Return: void
  */
@@ -25,6 +25,7 @@ if (i != n)
 printf("%d%s", num, separator);
 }
 }
+va_end(args);
 printf("\n");
 }
 
