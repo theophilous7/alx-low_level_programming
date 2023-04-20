@@ -11,20 +11,18 @@ void print_all(const char * const format, ...)
 {
 int j = 0;
 int len;
-char *string;
 va_list args;
 
 len = strlen(format);
 va_start(args, format);
-if (format[j] >= 97 && format[j] <= 123)
+if (format[j] >= 'a' && format[j] <= 'z')
 {
 while (j < len)
 {
 switch (format[j])
 {
 case 'c':
-	string = va_arg(args, char*);
-	printf("%s", string);
+	printf("%s", va_arg(args, char*));
 	break;
 case 'i':
 	printf("%d", va_arg(args, int));
@@ -43,5 +41,6 @@ if (format == NULL)
 {
 printf("(nil)");
 }
+printf("\n");
 va_end(args);
 }
