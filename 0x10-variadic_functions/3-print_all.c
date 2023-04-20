@@ -15,7 +15,7 @@ va_list args;
 
 len = strlen(format);
 va_start(args, format);
-if (format[j] >= 'a' && format[j] <= 'z')
+if (format[j] >= 'a' || format[j] <= 'z')
 {
 while (j < len)
 {
