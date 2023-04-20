@@ -18,13 +18,10 @@ va_start(args, n);
 for (i = 1; i <= n; i++)
 {
 string  = va_arg(args, char*);
-if (separator == NULL || i == n)
-{
 printf("%s", string);
-}
-if (i != n)
+if (i != n && separator != NULL)
 {
-printf("%s%s", string, separator);
+printf("%s", separator);
 }
 }
 va_end(args);
