@@ -1,5 +1,3 @@
-#include "function_pointers.h"
-#include "3-op_functions.c"
 #include "3-calc.h"
 #include <stdlib.h>
 /**
@@ -9,7 +7,7 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-int i;
+int i = 0;
 op_t ops[] = {
 {"+", op_add},
 {"-", op_sub},

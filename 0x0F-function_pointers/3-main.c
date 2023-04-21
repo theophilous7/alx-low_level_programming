@@ -11,9 +11,9 @@
  * @argv: second operand
  * Return: integer
  */
-int main(int argc, char *argv[])
+int main(int __attribute__((unused)) argc, char *argv[])
 {
-int num1, num2, result = 0;
+int num1, num2, result;
 char *operator;
 
 operator = argv[2];
@@ -24,15 +24,16 @@ if ((argc != 4))
 printf("Error\n");
 exit(98);
 }
-if (operator != '+' || operator != '-' || operator != '*' || operator != '/' || operator != '%'))
+if (get_op_func(operator) == NULL || operator[1] != '\0')
 {
 printf("Error\n");
 exit(99);
 }
-if ((operator == '/' && num2 == 0) || (operator == '%' && num2 == 0))
+if ((*operator == '/' && num2 == 0) || (*operator == '%' && num2 == 0))
 {
 printf("Error\n");
 exit(100);
 }
 result = get_op_func(operator)(num1,num2);
 return (result);
+}
